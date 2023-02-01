@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="18" total="21" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-01T17:51:55 IST" name="Suite" finished-at="2023-02-01T17:53:24 IST" duration-ms="89081">
+    <groups>
+      <group name="smoke">
+        <method signature="CreateCampaignWithProductTest.campWithProd()[pri:0, instance:Campaign.CreateCampaignWithProductTest@323b36e0]" name="campWithProd" class="Campaign.CreateCampaignWithProductTest"/>
+        <method signature="CreateOrganizationTest.createOrg()[pri:0, instance:Organization.CreateOrganizationTest@44ebcd03]" name="createOrg" class="Organization.CreateOrganizationTest"/>
+        <method signature="CreateProductTest.createProd()[pri:0, instance:Product.CreateProductTest@71809907]" name="createProd" class="Product.CreateProductTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-02-01T17:51:55 IST" name="Test" finished-at="2023-02-01T17:53:24 IST" duration-ms="89081">
+      <class name="Campaign.CreateCampaignWithProductTest">
+        <test-method is-config="true" signature="BC()[pri:0, instance:Campaign.CreateCampaignWithProductTest@323b36e0]" started-at="2023-02-01T17:52:31 IST" name="BC" finished-at="2023-02-01T17:52:32 IST" duration-ms="905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:Campaign.CreateCampaignWithProductTest@323b36e0]" started-at="2023-02-01T17:52:32 IST" name="BM" finished-at="2023-02-01T17:52:36 IST" duration-ms="3883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="campWithProd()[pri:0, instance:Campaign.CreateCampaignWithProductTest@323b36e0]" started-at="2023-02-01T17:52:36 IST" name="campWithProd" finished-at="2023-02-01T17:52:59 IST" duration-ms="23377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- campWithProd -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:Campaign.CreateCampaignWithProductTest@323b36e0]" started-at="2023-02-01T17:52:59 IST" name="AM" finished-at="2023-02-01T17:53:03 IST" duration-ms="4106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:Campaign.CreateCampaignWithProductTest@323b36e0]" started-at="2023-02-01T17:53:03 IST" name="AC" finished-at="2023-02-01T17:53:03 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+      </class> <!-- Campaign.CreateCampaignWithProductTest -->
+      <class name="Organization.CreateOrganizationTest">
+        <test-method is-config="true" signature="BC()[pri:0, instance:Organization.CreateOrganizationTest@44ebcd03]" started-at="2023-02-01T17:53:03 IST" name="BC" finished-at="2023-02-01T17:53:04 IST" duration-ms="914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:Organization.CreateOrganizationTest@44ebcd03]" started-at="2023-02-01T17:53:04 IST" name="BM" finished-at="2023-02-01T17:53:08 IST" duration-ms="3856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="createOrg()[pri:0, instance:Organization.CreateOrganizationTest@44ebcd03]" started-at="2023-02-01T17:53:08 IST" name="createOrg" finished-at="2023-02-01T17:53:20 IST" duration-ms="11511" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [organization name] but found [TestYantra493]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [organization name] but found [TestYantra493]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at Object_Repo.ValidationAndVerificationPage.validateOrganization(ValidationAndVerificationPage.java:46)
+at Organization.CreateOrganizationTest.createOrg(CreateOrganizationTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrg -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:Organization.CreateOrganizationTest@44ebcd03]" started-at="2023-02-01T17:53:20 IST" name="AM" finished-at="2023-02-01T17:53:24 IST" duration-ms="4174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:Organization.CreateOrganizationTest@44ebcd03]" started-at="2023-02-01T17:53:24 IST" name="AC" finished-at="2023-02-01T17:53:24 IST" duration-ms="454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+      </class> <!-- Organization.CreateOrganizationTest -->
+      <class name="Product.CreateProductTest">
+        <test-method is-config="true" signature="BS()[pri:0, instance:Product.CreateProductTest@71809907]" started-at="2023-02-01T17:51:55 IST" name="BS" finished-at="2023-02-01T17:51:55 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BS -->
+        <test-method is-config="true" signature="BT()[pri:0, instance:Product.CreateProductTest@71809907]" started-at="2023-02-01T17:51:55 IST" name="BT" finished-at="2023-02-01T17:51:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BT -->
+        <test-method is-config="true" signature="BC()[pri:0, instance:Product.CreateProductTest@71809907]" started-at="2023-02-01T17:51:55 IST" name="BC" finished-at="2023-02-01T17:51:59 IST" duration-ms="3280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:Product.CreateProductTest@71809907]" started-at="2023-02-01T17:51:59 IST" name="BM" finished-at="2023-02-01T17:52:03 IST" duration-ms="4057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="createProd()[pri:0, instance:Product.CreateProductTest@71809907]" started-at="2023-02-01T17:52:03 IST" name="createProd" finished-at="2023-02-01T17:52:26 IST" duration-ms="23532" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#dtlview_Organization\ Name"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9F9GKHEN', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\91910\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50855}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 40bcd4714bf7c538d7a2fd7e87c4e3e2
+*** Element info: {Using=id, value=dtlview_Organization Name}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#dtlview_Organization\ Name"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9F9GKHEN', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\91910\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50855}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 40bcd4714bf7c538d7a2fd7e87c4e3e2
+*** Element info: {Using=id, value=dtlview_Organization Name}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
+at Object_Repo.ValidationAndVerificationPage.validateOrganization(ValidationAndVerificationPage.java:45)
+at Product.CreateProductTest.createProd(CreateProductTest.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProd -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:Product.CreateProductTest@71809907]" started-at="2023-02-01T17:52:26 IST" name="AM" finished-at="2023-02-01T17:52:31 IST" duration-ms="4558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:Product.CreateProductTest@71809907]" started-at="2023-02-01T17:52:31 IST" name="AC" finished-at="2023-02-01T17:52:31 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+        <test-method is-config="true" signature="AT()[pri:0, instance:Product.CreateProductTest@71809907]" started-at="2023-02-01T17:53:24 IST" name="AT" finished-at="2023-02-01T17:53:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AT -->
+        <test-method is-config="true" signature="AS()[pri:0, instance:Product.CreateProductTest@71809907]" started-at="2023-02-01T17:53:24 IST" name="AS" finished-at="2023-02-01T17:53:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AS -->
+      </class> <!-- Product.CreateProductTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
