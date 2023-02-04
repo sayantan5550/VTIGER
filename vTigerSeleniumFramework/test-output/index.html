@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\91910\Desktop\QSPIDERS\JAVA\eclipse_workspace_forJava\vTigerSeleniumFramework\GroupExecution1testng.xml</span>
+                    <span>C:\Users\91910\git\repository222\vTigerSeleniumFramework\RegionalRegressionTesting2testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Organization.CreateOrganizationTest" class="method navigator-link" hash-for-method="createOrg">createOrg</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Product.CreateProductTest" class="method navigator-link" hash-for-method="createProd">createProd</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -123,7 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Campaign.CreateCampaignWithProductTest" class="method navigator-link" hash-for-method="campWithProd">campWithProd</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Organization.CreateOrganisationForRegionalRegressionTest" class="method navigator-link" hash-for-method="m1">m1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -138,80 +119,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Organization.CreateOrganizationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createOrg">
-                  </a> <!-- createOrg -->
-                  <span class="method-name">createOrg</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [organization name] but found [TestYantra493]
-	at Object_Repo.ValidationAndVerificationPage.validateOrganization(ValidationAndVerificationPage.java:46)
-	at Organization.CreateOrganizationTest.createOrg(CreateOrganizationTest.java:46)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Product.CreateProductTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createProd">
-                  </a> <!-- createProd -->
-                  <span class="method-name">createProd</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#dtlview_Organization\ Name&quot;}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-9F9GKHEN&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\91910\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50855}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 40bcd4714bf7c538d7a2fd7e87c4e3e2
-*** Element info: {Using=id, value=dtlview_Organization Name}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
-	at Object_Repo.ValidationAndVerificationPage.validateOrganization(ValidationAndVerificationPage.java:45)
-	at Product.CreateProductTest.createProd(CreateProductTest.java:47)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Campaign.CreateCampaignWithProductTest</span>
+              <span class="class-name">Organization.CreateOrganisationForRegionalRegressionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="campWithProd">
-                  </a> <!-- campWithProd -->
-                  <span class="method-name">campWithProd</span>
+                  <a name="m1">
+                  </a> <!-- m1 -->
+                  <span class="method-name">m1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,31 +137,20 @@ Session ID: 40bcd4714bf7c538d7a2fd7e87c4e3e2
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\91910\Desktop\QSPIDERS\JAVA\eclipse_workspace_forJava\vTigerSeleniumFramework\GroupExecution1testng.xml</span>
+            <span class="header-content">C:\Users\91910\git\repository222\vTigerSeleniumFramework\RegionalRegressionTesting2testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;smoke&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;smoke&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;BROWSER&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Product.CreateProductTest&quot;/&gt;
-      &lt;class name=&quot;Campaign.CreateCampaignTest&quot;/&gt;
-      &lt;class name=&quot;Campaign.CreateCampaignWithProductTest&quot;/&gt;
-      &lt;class name=&quot;Organization.CreateOrganizationTest&quot;/&gt;
-      &lt;class name=&quot;Product.CreateProductAndDeleteTest&quot;/&gt;
+      &lt;class name=&quot;Organization.CreateOrganisationForRegionalRegressionTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;m1&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Organization.CreateOrganisationForRegionalRegressionTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -257,7 +164,7 @@ Session ID: 40bcd4714bf7c538d7a2fd7e87c4e3e2
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (5 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,22 +174,6 @@ Session ID: 40bcd4714bf7c538d7a2fd7e87c4e3e2
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">smoke</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">campWithProd</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">createOrg</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">createProd</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -299,24 +190,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createProd')
-data.setCell(0, 2, 'Product.CreateProductTest')
-data.setCell(0, 3, 23532);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'campWithProd')
-data.setCell(1, 2, 'Campaign.CreateCampaignWithProductTest')
-data.setCell(1, 3, 23377);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createOrg')
-data.setCell(2, 2, 'Organization.CreateOrganizationTest')
-data.setCell(2, 3, 11511);
+data.setCell(0, 1, 'm1')
+data.setCell(0, 2, 'Organization.CreateOrganisationForRegionalRegressionTest')
+data.setCell(0, 3, 10);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 10 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -331,62 +214,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">18 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Campaign.CreateCampaignTest</span>
+              <span class="ignored-class-name">Organization.CreateOrganisationForRegionalRegressionTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">BT</span>
-                <br/>
-                <span class="ignored-method-name">AS</span>
-                <br/>
-                <span class="ignored-method-name">AT</span>
-                <br/>
-                <span class="ignored-method-name">BS</span>
-                <br/>
-                <span class="ignored-method-name">createCamp</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Product.CreateProductAndDeleteTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">prodAndDelete</span>
-                <br/>
-                <span class="ignored-method-name">BT</span>
-                <br/>
-                <span class="ignored-method-name">AS</span>
-                <br/>
-                <span class="ignored-method-name">AT</span>
-                <br/>
-                <span class="ignored-method-name">BS</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Organization.CreateOrganizationTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">BT</span>
-                <br/>
-                <span class="ignored-method-name">AS</span>
-                <br/>
-                <span class="ignored-method-name">AT</span>
-                <br/>
-                <span class="ignored-method-name">BS</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Campaign.CreateCampaignWithProductTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">BT</span>
-                <br/>
-                <span class="ignored-method-name">AS</span>
-                <br/>
-                <span class="ignored-method-name">AT</span>
-                <br/>
-                <span class="ignored-method-name">BS</span>
+                <span class="ignored-method-name">createOrg</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -398,95 +232,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Product.CreateProductTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Organization.CreateOrganisationForRegionalRegressionTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">BS</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">BT</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">BC</span>
-                <span class="method-start">49 ms</span>
+                <span class="method-start">50 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">BM</span>
-                <span class="method-start">3346 ms</span>
+                <span class="method-start">4151 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createProd</span>
-                <span class="method-start">7404 ms</span>
+                <span class="method-name">m1</span>
+                <span class="method-start">12426 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AM</span>
-                <span class="method-start">30945 ms</span>
+                <span class="method-start">12440 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">AC</span>
-                <span class="method-start">35518 ms</span>
+                <span class="method-start">16198 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Campaign.CreateCampaignWithProductTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">BC</span>
-                <span class="method-start">35727 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">BM</span>
-                <span class="method-start">36632 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">campWithProd</span>
-                <span class="method-start">40515 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">AM</span>
-                <span class="method-start">63893 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">AC</span>
-                <span class="method-start">68000 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Organization.CreateOrganizationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">BC</span>
-                <span class="method-start">68181 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">BM</span>
-                <span class="method-start">69095 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createOrg</span>
-                <span class="method-start">72951 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">AM</span>
-                <span class="method-start">84466 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">AC</span>
-                <span class="method-start">88641 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Product.CreateProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">AT</span>
-                <span class="method-start">89096 ms</span>
+                <span class="method-start">16411 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">AS</span>
-                <span class="method-start">89155 ms</span>
+                <span class="method-start">16432 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
