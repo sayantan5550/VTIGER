@@ -41,10 +41,10 @@ public class CreateProductTest extends BaseClass {
 		// Validation
 
 		ValidationAndVerificationPage validate  =new ValidationAndVerificationPage(driver);
-//		validate.validateProduct(productName);
+		validate.validateProduct(productName);
 		
 		// To fail the test case intentionally
-		validate.validateOrganization("product name");
+// 		validate.validateOrganization("product name");
 
 
 	}
