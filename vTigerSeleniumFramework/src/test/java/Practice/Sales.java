@@ -65,6 +65,8 @@ public class Sales {
 		//Switch to "Accounts&action" window
 		wlib.switchToWindow(driver, "Accounts&action");
 		
+		//////
+		
 		// Selecting the Organization
 		driver.findElement(By.id("search_txt")).sendKeys(orgName);
 		driver.findElement(By.name("search")).click();
