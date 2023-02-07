@@ -102,7 +102,7 @@ public class BaseClass {
 	@AfterTest(groups = {"smoke","regression"})
 	public void AT()
 	{
-		System.out.println("Execution done");
+		System.out.println("Execution done..");
 	}
 	@AfterSuite(groups = {"smoke","regression"})
 	public void AS()
